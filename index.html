@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineBox</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/carrossel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <h1>Cine box</h1>
+            </a>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+            <ul class="menu-icones">
+                <li><a href="#">ico</a></li>
+                <li><a href="#">ico</a></li>
+                <li><a href="#">ico</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <section id="banner">
+        <main class="carrossel-container">
+            <div class="carrossel">
+                <img src="./assets/img/banner/banner_00.jpg" alt="banner 00">
+                <img src="./assets/img/banner/banner_01.jpg" alt="banner 01">
+                <img src="./assets/img/banner/banner_02.jpg" alt="banner 02">
+                <img src="./assets/img/banner/banner_03.jpg" alt="banner 03">
+                <img src="./assets/img/banner/banner_04.jpg" alt="banner 04">
+                <img src="./assets/img/banner/banner_05.jpg" alt="banner 05">
+                <img src="./assets/img/banner/banner_06.jpg" alt="banner 06">
+            </div>
+
+            <button class="anterior" onclick="javascript:voltarSlide()"><i class="bi bi-arrow-left"></i></button>
+            <button class="proximo" onclick="javascript:proximoSlide()"><i class="bi bi-arrow-right"></i></button>
+
+        </main>
+    </section>
+    <section id="filmes-recomendados">
+        <h2 class="titulo">Filmes</h2>
+        <main>
+            <div class="linha">
+                <div class="coluna coluna-3">Poster 1</div>
+                <div class="coluna coluna-3">Poster 2</div>
+                <div class="coluna coluna-3">Poster 3</div>
+                <div class="coluna coluna-3">Poster 4</div>
+                <div class="coluna coluna-3">Poster 5</div>
+                <div class="coluna coluna-3">Poster 6</div>
+                <div class="coluna coluna-3">Poster 7</div>
+                <div class="coluna coluna-3">Poster 8</div>
+            </div>
+        </main>
+    </section>
+</body>
+<script src="./assets/js/carrossel.js">
+    
+</script>
+</html>

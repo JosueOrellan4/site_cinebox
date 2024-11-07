@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0; /*distancia entre um e outro*/
+    padding: 0;
+    font-family: "inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+header nav{
+    background-color:#F2F2F2;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu, .menu-icones{/*usamos a virgula aqui pra aplicar em duas classes*/
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+.menu li a, .menu-icones li a{
+    text-decoration: none;
+    color: #011c26;
+    padding: 8px;
+    border-radius: 8px;
+}
+.menu li a:hover{ /*o ato do mouse ester em cima é oque a gente chama de hover*/
+background-color: #011c26;
+color: white;
+}
