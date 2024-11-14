@@ -29,5 +29,5 @@ function anteriorSlide(){
 setInterval(() => {
 // funçao anonima que so funciona para so aquilo e nada mais, pequena coisas
     proximoSlide()
-},2000)
+},5000)
 // setiternal -> ele executa a cada x tempo, pede para ser passado uma função para ele 

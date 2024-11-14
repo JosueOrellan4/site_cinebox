@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="pt-br">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinebox</title>
 
@@ -32,10 +32,24 @@
                 <li><a href="#"><i class="bi bi-cart"></i></a></li>
                 <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
             </ul>
+            <!--menu hambúrguer abaixo-->
+            <button class="menu-oculto" onclick="javascript:abrirNav()">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div id="offcanvas" class="menu-oculto">
+                <button class="fechar" onclick="javascript:fecharNav()">
+                    <i class="bi bi-x"></i>
+                </button>
+                <a href="index.html">Inicio</a>
+                <a href="#">Filmes</a>
+                <a href="#">Sobre</a>
+            </div>
         </nav>
     </header>
+
     <section id="banner">
-        <!-- id é um identificador unico, ao contrario dda classe que existe varias -->
+        <!-- id é um identificador único, ao contrario dda classe que existe varias -->
         <main class="carrossel-container">
             <div class="carrossel">
                 <img src="./assets/img/banner/banner_00.jpg" alt="Banner_00">
@@ -57,14 +71,14 @@
             <div class="row">
                 <div class="col col-3">
                     <figure>
-                        <!-- se começa primeiro a tag  figure para prossegir com o figcapture  -->
+                        <!-- se começa primeiro a tag  figure para prosseguir com o figcapture  -->
                         <img src="./assets/img/poster/avatar-o-caminho-da-agua.png"
-                            alt="Poster do filme Avatar o caminho da agua" class="foto-produto">
+                            alt="Poster do filme Avatar o caminho da aguá" class="foto-produto">
 
                         <figcaption>
-                            <!-- conteudo do card colocar o que esta logo abaixo da foto; -->
-                            <h4>Avatar o caminho da agua</h4>
-                            <!-- o span é o elemento de linha, adequado para aplicar estilos aocontrario da div que é um elemento em bloco  -->
+                            <!-- conteúdo do card colocar o que esta logo abaixo da foto; -->
+                            <h4>Avatar o caminho da aguá</h4>
+                            <!-- o span é o elemento de linha, adequado para aplicar estilos ao contrario da div que é um elemento em bloco  -->
                             <span class="preco">R$15,90</span>
                             <p class="descricao">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -78,7 +92,6 @@
                             <label style="background-color: #580259;">Drama</label>
                             <label style="background-color: #D966BA;">Ficção</label>
                         </span>
-
                     </figure>
                 </div>
                 <div class="col col-3">
@@ -236,13 +249,11 @@
 
                     </figure>
                 </div>
-
             </div>
-
-
         </main>
     </section>
-
 </body>
 <script src="./assets/js/carrossel.js"></script>
+<script src="./assets/js/offcanvas.js"></script>
+
 </html>

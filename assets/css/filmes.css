@@ -22,7 +22,7 @@
     height: 95%;
     width: 100%;
 
-    /* o max-height alcança o tamanho maximo da imagem */
+    /* o max-height alcança o tamanho máximo da imagem */
     max-height: 380px;
     max-width: 280px;
     border-radius: 20px;
@@ -34,7 +34,7 @@
     /* pra ele ser sempre 10% do max width, sempre que uso% é porque nao e algo fixo */
     padding: 0 10%;
     display: flex;
-    /* flex grow para usar o espaço disponivel ao todo */
+    /* flex grow para usar o espaço disponível ao todo */
     flex-grow: 1;
     flex-direction: column;
     
@@ -48,7 +48,7 @@
 }
 
 #filmes_recomendados span.preco{
-    /* o id filmes_remendados onde tem a tag span com a classe preco, é o caminho  */
+    /* o id filmes_remendados onde tem a tag span com a classe preço, é o caminho  */
     color: #9125A3;
     font-weight: 700;
     font-size: 1.2rem;
@@ -57,7 +57,7 @@
 
 #filmes_recomendados figcaption p{
     text-align: justify;
-    /* webkit libera novos comandos secretos que estao em desuso */
+    /* webkit libera novos comandos secretos que estão em desuso */
     display: -webkit-box;
     -webkit-line-clamp: 2;
 
