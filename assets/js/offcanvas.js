@@ -1,9 +1,10 @@
-function abrirNav(){
+function abrirNav() {
     const menu = document.getElementById("offcanvas") /*seleciona o elemento id offcanvas*/
-    const menu = document.get
+    menu.style.width = "250px"
 
 }
 
-function fecharNav(){
-
+function fecharNav() {
+    const menu = document.getElementById("offcanvas") /*seleciona o elemento id offcanvas*/
+    menu.style.width = "0px"
 }
