@@ -1,2 +1,4 @@
 <?php
-echo "ola mundo";
+$titulo = 'CineBox - listar filmes';
+include './includes/header.php';
+?>
