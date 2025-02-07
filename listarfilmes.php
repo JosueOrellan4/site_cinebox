@@ -1,4 +1,4 @@
-<?php
-$titulo = 'CineBox - listar filmes';
-include './includes/header.php';
+<?php 
+$titulo = 'Cinebox - Filmes';
+include'./includes/header.php'; 
 ?>
