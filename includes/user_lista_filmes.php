@@ -1,13 +1,33 @@
-    <div class="row desc-filme">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<?php
+$dsn = 'mysql:dbname=db_cinebox;host=127.0.0.1';
+$user = 'root';
+$password = '';
 
+$banco = new PDO($dsn, $user, $password);
+
+$select= "SELECT * FROM tb_filmes";
+
+$resultado = $banco->query($select)->fetchALL();
+?>
+    
+    
+    
+    
+    
+    
+    <?php foreach($resultado as $linha) {?>
+    <div class="row desc-filme">
+    
         <div class="col-12 col-lg-2 col-sm-12 col-md-12 text-center">
-            <img src="./assets/img/poster/jojo-rabbit.png" alt="" class="desc-foto">
+            
+                <img src="./assets/img/poster/<?php echo $linha ['poster'] ?>" alt="" class="desc-foto">
         </div>
 
         <div class="col-12 col-lg-8 col-sm-12 col-md-12 mt-3">
-            <h3 class="title">Jojo Rabbit</h3>
+            <h3 class="title"><?php echo $linha ['nome'] ?></h3>
             <p class="desc-descricao">
-                Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                <?php echo $linha['descricao']?>
             </p>
         </div>
 
@@ -20,6 +40,8 @@
                 <i class="bi bi-trash-fill"></i>
                 Excluir
             </a>
+            
         </div>
-
+       
     </div>
+     <?php } ?>

@@ -1,5 +1,5 @@
 <section id="banner">
-        <!-- id é um identificador unico, ao contrario dda classe que existe varias -->
+        
         <main class="carrossel-container">
             <div class="carrossel">
                 <img src="./assets/img/banner/banner_00.jpg" alt="Banner_00">
