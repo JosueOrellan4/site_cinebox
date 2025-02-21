@@ -37,53 +37,54 @@ header nav{
     background-color: #011c26;
     color:white
 }
-
-/*estilização do hambúrguer*/
+/* estilização do hambuguer */
 button.menu-oculto{
-    border:none;
+    border: none;
     font-size: 2rem;
-    padding: 8px; 
+    padding: 8px;
     color: #0b0e19;
-    background-color: inherit; /* reseta a cor de fundo do hambúrguer*/
+    background-color: inherit;
+    /* background color nao aceita o none ou hidden */
+    /* o inherit resetar para um valor zero tudo que tiver */
+    /* none esconde / remove */
+    /* hidden */
 }
-
 div.menu-oculto{
-    background-color: #210D26;
+    background-color: #210d26;
     position: fixed;
     height: 100%;
     top: 0;
-    left: 0; /*para abrir menu da esquerda pra direita*/
-    z-index: 1; /*quanto maior o valor mais a frente vai estar*/
-
-    width: 250px;
+    left: 0;
+    /* left para o menu abrir da esquerda para direita */
+    z-index:1 ;
+    /* quanto maior esse valor mais a frente ele vai ficar */
+    width: 0;
     overflow-x: hidden;
+    /* serve para ocultar / prensar o dimensionando em largura todo que estiver no menu  */
     padding-top: 60px;
     transition: 0.5s;
+    
 }
-
-div.menu-oculto a{
+div.menu-oculto a {
     text-decoration: none;
     font-size: 1.2rem;
-    padding: 8px 8px 8px 32px; /*aumenta a area que ele ocupa*/
+    padding: 8px 8px 8px 32px;
     display: block;
     transition: 0.3s;
-    color: #D9D9D9; /*muda a cor dos href pra cinza claro*/
+    color: #d9d9d9;
 }
-
-/*estilização botão de fechar */
 div.menu-oculto button.fechar{
     position: absolute;
     top: 0;
     right: 20px;
+    /* absolute posso deixar onde quiser e aprtir disso posso usar o top e right */
     font-size: 2rem;
-    background-color: inherit; /*faz com que ela tenha a mesma cor de fundo que a div menu oculto*/
+    background-color: transparent;
     border: none;
-    color: #D9D9D9;
+    color: #d9d9d9;
     padding: none;
     transition: 0.3s;
 }
-
-/*estilização footer*/
 
 .footer {
     background-color: #210D26;
@@ -117,4 +118,3 @@ div.menu-oculto button.fechar{
     border-top: 1px solid #F2F2F2;
     margin-top: 20px;
 }
-
