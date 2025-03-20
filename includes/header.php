@@ -27,11 +27,12 @@
     <link rel="stylesheet" href="./assets/js/offcanvas.js">
     <link rel="stylesheet" href="./assets/css/usuario.css">
     
+    
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="menu-perfil">
             <a href="./index.php" class="logo">
                 <h1>Cine box</h1>
             </a>
