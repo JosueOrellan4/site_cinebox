@@ -1,6 +1,6 @@
 
 <div class="row">
-    <h4 class="identificacao">Bem vindo: <?=$_SESSION['nome']?></h4>
+    <h4 class="identificacao">Bem vindo: <? echo $_SESSION['nome']?></h4>
 </div>
 <div class="row">
     <div class="col d-flex justify-content-between">
