@@ -1,5 +1,5 @@
 <?php
-//boa pratica: criar uma classe sempre com a primeira letra maiuscula
+//boa pratica: criar uma classe sempre com a primeira letra maiuscula e com o mesmo nome do arquivo
 //serve para padronizar informações
 class Filmes
 {
