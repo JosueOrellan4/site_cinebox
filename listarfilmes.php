@@ -12,6 +12,7 @@ $generos = new Generos();
 $dadosGeneros = $generos->consultarListaGeneros();
 
 include './includes/filmes_filtro.php';
+
 include './includes/footer.php';
 
 ?>

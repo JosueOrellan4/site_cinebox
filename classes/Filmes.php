@@ -26,4 +26,38 @@ class Filmes
 
         return $banco->query($script)->fetchAll();
     }
+
+    public function exibirDetalhesFilmes(){
+
+        $dsn = 'mysql:dbname=db_cinebox;host=127.0.0.1';
+
+        $user = 'root';
+
+        $password = '';
+
+        $banco = new PDO($dsn, $user, $password);
+
+        $id_filme = $_GET['id'];
+        
+
+        $script = 'SELECT tb_filmes.*,tb_generos.cor,tb_filme_genero.* FROM tb_filme_genero INNER JOIN tb_filmes ON tb_filmes.id = tb_filme_genero.filme_id INNER JOIN tb_generos ON tb_generos.id = tb_filme_genero.genero_id WHERE tb_filme_genero.id =' . $id_filme; 
+        
+        return $banco->query($script)->fetch();
+    }
+    public function consulta(){
+        $dsn = 'mysql:dbname=db_cinebox;host=127.0.0.1';
+
+        $user = 'root';
+
+        $password = '';
+
+        $banco = new PDO($dsn, $user, $password);
+
+        $id_filme = $_GET['id'];
+
+        $script = "SELECT * FROM tb_filmes WHERE id = $id_filme";
+        
+        return $banco->query($script)->fetch();
+
+    }
 }
